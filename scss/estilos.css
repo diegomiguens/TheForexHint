@@ -1,0 +1,315 @@
+.body {
+  text-align: center;
+  background-image: url(https://wallpapercave.com/wp/wp6658601.jpg);
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  opacity: 96%;
+}
+
+.padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.padre div {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  font-size: 8mm;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+  padding: 15px;
+  margin: 15px;
+}
+
+.boton {
+  width: 90%;
+  text-decoration: none;
+  background: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5mm;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.boton1 {
+  text-decoration: none;
+  background: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4mm;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.boton2 {
+  width: 400px;
+  text-decoration: none;
+  background-color: #444444;
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: 'Zen Loop', cursive;
+  font-size: 8mm;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.video {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+.h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-align: center;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-align: center;
+}
+
+.images {
+  border-style: ridge;
+  border-width: 5px;
+  border-color: lightgray;
+  margin: 15px;
+}
+
+.link {
+  text-decoration: underline;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5mm;
+}
+
+.link1 {
+  text-decoration: underline;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8mm;
+}
+
+.titulo {
+  font-size: 20mm;
+  background: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+  color: white;
+  border-style: ridge;
+}
+
+.li {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 10;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+.fondoFormulario {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: grey;
+  padding: 10px;
+  display: inline-block;
+  border-style: ridge;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ul1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer {
+  border-style: ridge;
+  border-width: 3px;
+  background: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+}
+
+@media only screen and (max-width: 768px) {
+  .h2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .video {
+    width: 100%;
+  }
+  .padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+a:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+a img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.header__navbar {
+  background-color: -webkit-linear-gradient(right, #acb0e9, #2d3277);
+  width: 90%;
+  text-decoration: none;
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5mm;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.header__navbar--fondogris {
+  background-color: grey;
+  width: 90%;
+  text-decoration: none;
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5mm;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.h3__botonVermas {
+  width: 400px;
+  text-decoration: none;
+  background-color: #444444;
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: 'Zen Loop', cursive;
+  font-size: 8mm;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.h3__botonVermas--fondonegro {
+  width: 400px;
+  text-decoration: none;
+  background-color: #444444;
+  border-style: ridge;
+  border-width: 3px;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  font-family: 'Zen Loop', cursive;
+  font-size: 8mm;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=estilos.css.map */

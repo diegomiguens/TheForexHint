@@ -1,0 +1,338 @@
+.body{
+    text-align: center;
+    background-image: url(https://wallpapercave.com/wp/wp6658601.jpg);
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    opacity: 96%;
+}
+.padre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+    div{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline;
+        font-size: 8mm;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $gradiente-azul;
+        padding: 15px;
+        margin: 15px;
+    }
+}
+.boton{
+    width: 90%;
+    text-decoration: none;
+    background: $gradiente-azul;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.boton1{
+    text-decoration: none;
+    background: $gradiente-azul;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.boton2{
+    width: 400px;
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: 'Zen Loop', cursive;
+    font-size: 8mm;
+    font-weight: bold;
+    display: inline-block;
+    flex-direction: row;    
+}
+.video{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+}
+.h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-align: center;
+}
+h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-align: center;
+}
+.images{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: lightgray;
+    margin: 15px;
+}
+.link{
+    text-decoration: underline;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+}
+.link1{
+    text-decoration: underline;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8mm;
+}
+.titulo{
+    font-size: 20mm;
+    background: $gradiente-azul;
+    color: white;
+    border-style: ridge;
+}
+.li{
+    display: inline-block;
+    width: 20%;
+    position: relative;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 10;
+    ul{
+        position: absolute;
+        display: none;
+        li{
+            display: block;
+        }
+    }
+}
+ul li:hover ul{
+    display: block;
+}
+.fondoFormulario{
+    height: fit-content;
+    width: fit-content;
+    background-color: grey;
+    padding: 10px;
+    display: inline-block;
+    border-style: ridge;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ul1{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    justify-content: space-evenly;
+}
+footer{
+    border-style: ridge;
+    border-width: 3px;
+    background: $gradiente-azul;
+}
+@media only screen and (max-width: 768px) {
+    .h2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video{
+        width: 100%;
+    }
+    .padre{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+a:hover{
+        transform: scale(105%);
+}
+a img:hover{
+        transform: scale(105%);
+}
+
+// 4 BEM PARA DESAFIO COMUN, 1 EN EL HEADER, 2 EN EL ARTICLE, 1 EN EL FOOTER.
+
+.header__navbar{
+    background-color: -webkit-linear-gradient(right,#acb0e9, #2d3277);;
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.header__navbar--fondogris{
+    background-color: grey;
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.article__botonVermas{
+    width: 400px;
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: 'Zen Loop', cursive;
+    font-size: 8mm;
+    font-weight: bold;
+    display: inline-block;
+    flex-direction: row;
+}
+.article__botonVermas--fondonegro{
+    width: 400px;
+    text-decoration: none;
+    background-color: black
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: 'Zen Loop', cursive;
+    font-size: 8mm;
+    font-weight: bold;
+    display: inline-block;
+    flex-direction: row;
+}
+.article__imagen1{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: lightgray;
+    margin: 15px;
+}
+.article__imagen1--redondeado{
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: lightgray;
+    margin: 15px;
+}
+.footer__colorfondo{
+    border-style: ridge;
+    border-width: 3px;
+    background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+}
+.footer__colorfondo--gris{
+    border-style: ridge;
+    border-width: 3px;
+    background: grey;
+}
+//DESAFIO COMPLEMENTARIO, 4 BEM MÁS 2 MAS EN HEADER Y 2 MAS EN FOOTER
+
+.header__navbar{
+    background-color: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.header__navbar--redondeado{
+    background-color: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-radius: 10px;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.header__navbar{
+    background-color: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.header__navbar--fondorojo{
+    background-color: red
+    width: 90%;
+    text-decoration: none;
+    border-style: ridge;
+    border-radius: 10px;
+    border-width: 3px;
+    color: white;
+    margin: 5px;
+    padding: 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+    font-weight: bold;
+    display: inline-block;
+}
+.footer__colorfondo{
+    border-style: ridge;
+    border-width: 3px;
+    background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+}
+.footer__colorfondo--rojo{
+    border-style: ridge;
+    border-width: 3px;
+    background:red;
+}
+.footer__colorfondo{
+    border-style: ridge;
+    border-width: 3px;
+    background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+}
+.footer__colorfondo--verde{
+    border-style: ridge;
+    border-width: 3px;
+    background: green;
+}
