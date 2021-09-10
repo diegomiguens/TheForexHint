@@ -31,7 +31,7 @@
 .boton{
     width: 90%;
     text-decoration: none;
-    background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
+    background: linear-gradient(180deg, rgb(49, 49, 49), rgb(145, 145, 145));
     border-style: ridge;
     border-width: 3px;
     color: white;
@@ -61,19 +61,18 @@
     color: white;
     margin: 5px;
     padding: 8px; 
-    font-family: 'Zen Loop', cursive;
-    font-size: 8mm;
+    font-size: 5mm;
     font-weight: bold;
     display: inline-block;
     flex-direction: row;    
 }
-.h2{
+.flexImagenes{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     -ms-flex-align: center;
 }
-h3{
+.verMas{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -95,10 +94,11 @@ h3{
     text-decoration: underline;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 8mm;
+    font-size: 6mm;
 }
 .titulo{
-    font-size: 20mm;
+    font-size: 18mm;
+    font-style: italic;
     background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
     color: white;
     border-style: ridge;
@@ -108,7 +108,6 @@ ul{
     list-style: none;
     font-size: 0;
     padding: 0;
-    margin: 10;
 }
 .li{
     display: inline-block;
@@ -146,7 +145,7 @@ footer{
     background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
     align-items: center;
     display: flex;
-    height: 80px;
+    height: 60px;
     justify-content: space-evenly;
     width: auto;
 }
@@ -173,7 +172,7 @@ a img:hover{
 .fondoarticle{
     background: -webkit-linear-gradient(right,#acb0e9, #2d3277);
     border-style: ridge;
-    font-size: 12mm;
+    font-size: 10mm;
     font-weight: bold;
     align-items: center;
     display: flex;
@@ -184,19 +183,43 @@ a img:hover{
 .fondoarticle2{
     background-image: linear-gradient(180deg, rgb(49, 49, 49), rgb(145, 145, 145));
     border-style: ridge;
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: 400;
     text-align: justify;
     padding: 10px;
     line-height: 150%;
 }
 .fondoarticle3{
-    background-color: rgb(192, 192, 192);
+    background: -webkit-linear-gradient(right,#363636, #272727);
     border-style: ridge;
     font-size: 4mm;
     font-weight: 400;
     text-align: justify;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    line-height: 150%;
-    color: black;
+    line-height: 200%;
+    color: rgb(255, 255, 255);
+}
+.fondoDerechos{
+    background: -webkit-linear-gradient(right,#363636, #272727);
+    font-size: 4mm;
+    border-width: 3px;
+    border-color: rgb(131, 131, 131);
+    border-style: ridge;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    width: auto;
+}
+.fondoDesplegable{
+    background: -webkit-linear-gradient(right,#363636, #272727);
+    padding: 5px;
+}
+.fondoInvesting{
+    background: rgb(7, 7, 7);
+    border-style: ridge;
+    border-color: rgb(46, 46, 46);
+    border-width: 10px;
 }
